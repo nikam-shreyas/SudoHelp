@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleY="1"
+        app:mwhVelocity="1"
+        app:mwhProgress="1"
+        app:mwhIsRunning="true"
+        app:mwhGradientAngle="45"
+        app:mwhWaveHeight="50dp"
+        app:mwhColorAlpha="0.45"
+        app:mwhStartColor="@color/colorPrimaryDark"
+        app:mwhCloseColor="@color/colorPrimaryLight"
+        app:mwhWaves="MultiWave" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam Details..."
+        android:textSize="30sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="4dp"
+        android:hint="Subject">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subject"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="4dp"
+        android:hint="Examination Date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_of_exam1"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="4dp"
+        android:hint="Language">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lang"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="4dp"
+        android:hint="Location">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="right"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:gravity="right"
+    >
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        app:cornerRadius="20dp"
+        android:backgroundTint="@color/backgroundColor"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Back"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/apply_form"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#2196f3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Apply"/>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

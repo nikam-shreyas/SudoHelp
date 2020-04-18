@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleY="1"
+        app:mwhVelocity="1"
+        app:mwhProgress="1"
+        app:mwhIsRunning="true"
+        app:mwhGradientAngle="45"
+        app:mwhWaveHeight="50dp"
+        app:mwhColorAlpha="0.45"
+        app:mwhStartColor="@color/colorPrimaryDark"
+        app:mwhCloseColor="@color/colorPrimaryLight"
+        app:mwhWaves="MultiWave" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:orientation="horizontal"
+>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profile"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#42a5f5"
+        android:text="Profile"
+        android:onClick="OpenProfile" />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-49dp"
+        android:layout_gravity="right"
+        android:gravity="right">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/applications"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#42a5f5"
+        android:text="Applications"
+        android:onClick="OpenApplications" />
+</LinearLayout>
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/frame"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/backgroundColor"
+        android:layout_marginTop="50dp"
+        android:background="#ffeee9e2"
+        app:rotation_degrees="15.5"
+        tools:context=".MyActivity" >
+    </com.lorentzos.flingswipe.SwipeFlingAdapterView>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/customshape3"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Apply"
+        app:cornerRadius="5dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#03a9f4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/customshape3"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_gravity="bottom">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Signout"
+            android:backgroundTint="#42a5f5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

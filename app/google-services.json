@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "602180904002",
+    "firebase_url": "https://sudohelp-f266b.firebaseio.com",
+    "project_id": "sudohelp-f266b",
+    "storage_bucket": "sudohelp-f266b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602180904002:android:8c3563ec04cbc89c49f9db",
+        "android_client_info": {
+          "package_name": "com.example.sudohelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602180904002-id8142auu3n44o51sa5uhe0p6qu23o4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sudohelp",
+            "certificate_hash": "3d4d0c2a4af77a2d119d16d7b0dccbe2a11bc186"
+          }
+        },
+        {
+          "client_id": "602180904002-4rvc2r4b7996it30ppmgseqinav3jokj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4J75wKa89KIPjmfjKal9rWMMEZEu4vwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602180904002-4rvc2r4b7996it30ppmgseqinav3jokj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

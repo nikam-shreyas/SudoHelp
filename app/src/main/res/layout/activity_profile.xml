@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.wave.MultiWaveHeader
+            android:id="@+id/waveHeader"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleY="1"
+            app:mwhVelocity="1"
+            app:mwhProgress="1"
+            app:mwhIsRunning="true"
+            app:mwhGradientAngle="45"
+            app:mwhWaveHeight="50dp"
+            app:mwhColorAlpha="0.45"
+            app:mwhStartColor="@color/colorPrimaryDark"
+            app:mwhCloseColor="@color/colorPrimaryLight"
+            app:mwhWaves="MultiWave" />
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:background="#1a237e"
+            android:elevation="5dp"
+            android:scaleType="fitXY" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="235dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="4dp"
+                android:textSize="30sp"
+                android:hint="Name:"
+               />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:padding="4dp"
+                android:hint="Name not entered"
+                android:id="@+id/name2"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="4dp"
+                android:textSize="30sp"
+                android:hint="Email ID:"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:padding="4dp"
+                android:hint="Email ID not entered"
+                android:id="@+id/emailId">
+
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="4dp"
+                android:textSize="30sp"
+                android:hint="Phone no:"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                android:layout_marginRight="20dp"
+                android:padding="4dp"
+                android:hint="Phone number not entered"
+                android:id="@+id/phoneNo">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="4dp"
+                android:textSize="30sp"
+                android:hint="Date of Birth:"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:padding="4dp"
+                android:hint="Date of birth not entered"
+                android:id="@+id/dateOfBirth">
+
+            </TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="25dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:backgroundTint="#2196f3"
+                android:layout_height="wrap_content"
+                android:text="Update"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2196f3"
+                android:layout_marginLeft="10dp"
+                android:text="Back"/>
+</LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

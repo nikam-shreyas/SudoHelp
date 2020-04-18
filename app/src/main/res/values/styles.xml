@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#1a237e</item>
+        <item name="colorPrimaryDark">#304ffe</item>
+        <item name="colorPrimaryVariant">#304ffe</item>
+        <item name="colorOnPrimary">#bbdefb</item>
+        <item name="colorSecondary">#1a237e</item>
+        <item name="colorSecondaryVariant">#3949ab</item>
+        <item name="colorOnSecondary">#8c9eff</item>
+        <item name="colorError">#F44336</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSurface">#2962ff</item>
+        <item name="colorOnSurface">#212121</item>
+        <item name="android:colorBackground">@color/backgroundColor</item>
+        <item name="colorOnBackground">#FAFAFA</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationStyle</item>
+    </style><color name="background">#1976d2</color>
+
+    <style name="WindowAnimationStyle">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+<!--    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        - Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+-->
+</resources>

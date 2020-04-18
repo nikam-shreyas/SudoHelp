@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SudoHelp</string>
+    <string name="exam_name">Exam: </string>
+    <string name="writer">Writer: </string>
+    <string name="date">Date: </string>
+    <string name="chat">Chat with writer</string>
+</resources>
